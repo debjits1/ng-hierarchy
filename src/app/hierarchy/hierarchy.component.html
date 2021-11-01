@@ -1,0 +1,14 @@
+<div class="tree-view">
+    <div class="container" *ngFor="let item of items; let i = index;">
+
+        <div class="heading">
+            {{item.name}}
+        </div>
+
+        <div class="panel-body">
+            <div *ngIf="item.children && !item.children.length">{{item.short_description}}</div>
+            <app-hierarchy *ngIf="item.children && item.children.length" [items]="item.children"></app-hierarchy>
+        </div>
+    </div>
+
+</div>

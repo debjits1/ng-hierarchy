@@ -1,0 +1,26 @@
+:host{
+    display: block;
+}
+.heading {
+    background-color: #5e5e5e;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.panel-body {
+    padding: 15px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+}
+
+.panel-body .container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .panel-body .container {
+        padding: 8px;
+    }
+}
